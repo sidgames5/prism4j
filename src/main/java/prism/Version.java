@@ -8,7 +8,7 @@ public class Version {
 
     private Version() {
         this.name = "0.1.1";
-        this.level = 1;
+        this.level = 2;
     }
 
     public String getName() {
