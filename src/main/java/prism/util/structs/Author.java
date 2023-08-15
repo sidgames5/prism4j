@@ -1,9 +1,11 @@
 package prism.util.structs;
 
+import prism.util.haxe.Bytes;
+
 public class Author {
     public String username;
     public String displayName;
-    public byte[] pfp;
+    public Bytes pfp;
     public int userID;
 
     public Author setUsername(String username) {
@@ -16,7 +18,7 @@ public class Author {
         return this;
     }
 
-    public Author setPfp(byte[] pfp) {
+    public Author setPfp(Bytes pfp) {
         this.pfp = pfp;
         return this;
     }

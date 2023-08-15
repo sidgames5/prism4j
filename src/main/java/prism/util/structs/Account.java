@@ -1,13 +1,15 @@
 package prism.util.structs;
 
+import prism.util.haxe.Bytes;
+
 public class Account {
     public String username;
     public int userID;
-    public byte[] password;
+    public Bytes password;
     public Profile profile;
     public static class Profile {
         public String displayName;
-        public byte[] pfp;
+        public Bytes pfp;
         public String bio;
 
         public Profile setDisplayName(String displayName) {
@@ -15,7 +17,7 @@ public class Account {
             return this;
         }
 
-        public Profile setPfp(byte[] pfp) {
+        public Profile setPfp(Bytes pfp) {
             this.pfp = pfp;
             return this;
         }
@@ -36,7 +38,7 @@ public class Account {
         return this;
     }
 
-    public Account setPassword(byte[] password) {
+    public Account setPassword(Bytes password) {
         this.password = password;
         return this;
     }

@@ -7,7 +7,7 @@ public class Version {
     private final int level;
 
     private Version() {
-        this.name = "0.1.0";
+        this.name = "0.1.1";
         this.level = 1;
     }
 

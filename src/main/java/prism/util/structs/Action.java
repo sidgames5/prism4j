@@ -1,5 +1,7 @@
 package prism.util.structs;
 
+import prism.util.haxe.Bytes;
+
 import java.util.List;
 
 public class Action {
@@ -15,7 +17,7 @@ public class Action {
         public int startIndex;
         public int endIndex;
         public int type;
-        public byte[] token;
+        public Bytes token;
         public String details;
 
         public Params setUsername(String username) {
@@ -58,7 +60,7 @@ public class Action {
             return this;
         }
 
-        public Params setToken(byte[] token) {
+        public Params setToken(Bytes token) {
             this.token = token;
             return this;
         }
